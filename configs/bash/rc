@@ -1,0 +1,7 @@
+source ~/.local/share/my-dev-station/configs/bash/shell
+source ~/.local/share/my-dev-station/configs/bash/aliases
+source ~/.local/share/my-dev-station/configs/bash/functions
+source ~/.local/share/my-dev-station/configs/bash/prompt
+source ~/.local/share/my-dev-station/configs/bash/init
+
+

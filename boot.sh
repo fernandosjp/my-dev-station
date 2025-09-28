@@ -14,7 +14,7 @@ echo -e "$ascii_art"
 echo "=> My Dev Station is for fresh macOS installtion only!"
 echo -e "\nBegin installation (or abort with ctrl+c)..."
 
-NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" >/dev/null
+# NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" >/dev/null
 brew install git >/dev/null
 
 echo "Cloning My Dev Station..."
