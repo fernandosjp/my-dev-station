@@ -13,6 +13,6 @@ unzip iafonts.zip -d iaFonts
 cp iaFonts/iA-Fonts-master/iA\ Writer\ Mono/Static/iAWriterMonoS-*.ttf ~/Library/Fonts/
 rm -rf iafonts.zip iaFonts
 
-# Linux command to clear font cache. Haven't found equivalent in MacOS
+# TODO: Linux command to clear font cache. Haven't found equivalent in MacOS
 # fc-cache
-cd -
+# cd -

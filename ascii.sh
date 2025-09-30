@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/zsh
 
 ascii_art='
    __  ___       ___             ______       __  _
@@ -8,22 +8,28 @@ ascii_art='
        /___/
 '
 
-# Define the color gradient (shades of cyan and blue)
+# Define the color gradient
 colors=(
-	'\033[38;5;81m' # Cyan
-	'\033[38;5;75m' # Light Blue
-	'\033[38;5;69m' # Sky Blue
-	'\033[38;5;63m' # Dodger Blue
-	'\033[38;5;57m' # Deep Sky Blue
-	'\033[38;5;51m' # Cornflower Blue
-	'\033[38;5;45m' # Royal Blue
+	'\033[38;5;46m'  # Bright Green
+	'\033[38;5;47m'  # Spring Green
+	'\033[38;5;48m'  # Light Green
+	'\033[38;5;49m'  # Aquamarine
+	'\033[38;5;83m'  # Medium Green
+	'\033[38;5;77m'  # Sea Green
+	'\033[38;5;71m'  # Forest Green
 )
 
-# Split the ASCII art into lines
-IFS=$'\n' read -rd '' -a lines <<<"$ascii_art"
+# Reset color code
+reset='\033[0m'
+
+# Split by newlines (works in both bash and zsh)
+lines=()
+while IFS= read -r line; do
+	lines+=("$line")
+done <<< "$ascii_art"
 
 # Print each line with the corresponding color
 for i in "${!lines[@]}"; do
 	color_index=$((i % ${#colors[@]}))
-	echo -e "${colors[color_index]}${lines[i]}"
+	echo "${colors[color_index]}${lines[i]}"
 done

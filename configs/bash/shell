@@ -1,7 +1,12 @@
 # History control
-HISTFILE=~/.zsh_history
+# shopt -s histappend
+# setopt APPEND_HISTORY
+HISTCONTROL=ignoreboth
 HISTSIZE=32768
-SAVEHIST=32768
-setopt INC_APPEND_HISTORY
-setopt HIST_FIND_NO_DUPS
-setopt HIST_IGNORE_DUPS
+HISTFILESIZE="${HISTSIZE}"
+
+# Set complete path
+export PATH="./bin:$HOME/.local/bin:$HOME/.local/share/my-dev-station/bin:$PATH"
+set +h
+
+export OMAKUB_PATH="$HOME/.local/share/my-dev-station"

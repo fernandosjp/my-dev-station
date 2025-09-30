@@ -1,8 +1,9 @@
-#!/bin/zsh
+#!/bin/bash
 
 # Configure the bash shell using Omakub defaults
 [ -f ~/.zshrc ] && mv ~/.zshrc ~/.zshrc.bak
 cp ~/.local/share/my-dev-station/configs/bashrc ~/.zshrc
+# source ~/.zshrc
 
 # # Load the PATH for use later in the installers
 # source ~/.local/share/my-dev-station/configs/bash/shell
