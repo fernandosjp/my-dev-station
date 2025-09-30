@@ -9,6 +9,9 @@ fi
 if [[ -n "$SUB" ]] && [[ "$SUB" != "quit" ]]; then
 	INSTALLER=$(echo "$SUB" | tr '[:upper:]' '[:lower:]' | sed 's/ /-/g' | sed 's/-(future)//g')
 	source $OMAKUB_PATH/bin/omakub-sub/$INSTALLER.sh
+elif
+	# Clear and quit
+	clear
 fi
 
 
