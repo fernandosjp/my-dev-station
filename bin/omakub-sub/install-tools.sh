@@ -1,9 +1,5 @@
 #!/bin/bash
 
-# Ask for app choices
-# echo "Get ready to make a few choices..."
-# source ~/.local/share/my-dev-station/install/first-run-choices.sh
-
 # Install terminal tools
 source ~/.local/share/my-dev-station/install/terminal.sh
 
