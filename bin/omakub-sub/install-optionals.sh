@@ -2,6 +2,7 @@
 
 CHOICES=(
   "Discord           Communication platform for voice, video, and text messaging"
+  "WhatsApp          Web app for Whatsapp text messaging"
   "Ollama            Run LLMs, like Meta's Llama3, locally"
   "Spotify           Stream music from the world's most popular service"
   "Tailscale         Mesh VPN based on WireGuard and with Magic DNS"
