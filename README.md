@@ -22,7 +22,7 @@ Terminal applications include:
 wget -O - https://raw.githubusercontent.com/fernandosjp/my-dev-station/refs/heads/main/boot.sh | sh
 ```
 
-## Testing
+## Development Mode
 
 ```
 sh dev-mode.sh
