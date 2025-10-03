@@ -1,7 +1,7 @@
 #!/bin/bash
 #
 # Install docker colima to keep the stack opensource and license free
-brew install docker colima
+brew install docker colima docker-compose
 # Start service in background
 brew services start colima
 
